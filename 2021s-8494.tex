@@ -1,10 +1,36 @@
+\providecommand{\pdfxopts}{a-1b,cyrxmp}
+%\providecommand{\pdfxopts}{a-1b}
+\providecommand{\thisyear}{2021}
+\immediate\write18{rm \jobname.xmpdata}%  uncomment for Unix-based systems
+\begin{filecontents*}{\jobname.xmpdata}
+\Title{Ведомость Датчики, группа 8494, весна \textemdash\thisyear}
+\Author{Прокшин Артем Николаевич}
+\Creator{pdfTeX + pdfx.sty with options \pdfxopts }
+\Subject{Ведомость посещения занятий и выполнения лабораторных работ по датчикам студентами 8492 группы}
+\Keywords{ведомость посещения, группа 8494, ЛЭТИ}
+\CoverDisplayDate{март \thisyear}
+\CoverDate{2021-04-22}
+\Copyrighted{True}
+\Copyright{Public Domain}
+\CopyrightURL{http://github.com/trot-t}
+\Creator{pdfTeX + pdfx.sty with options \pdfxopts }
+\end{filecontents*}
+
+
 \documentclass[a4paper,landscape,11pt]{article}
+
+\pdfcompresslevel=9
+
+\usepackage[\pdfxopts]{pdfx}[2016/03/09]
+\PassOptionsToPackage{obeyspaces}{url}
+\let\tldocrussian=1  % for live4ht.cfg
+
 %\documentclass[a4paper,11pt]{article} 
 %\usepackage[T1,T2A]{fontenc}
 \usepackage[utf8x]{inputenc}
 \usepackage[english,russian]{babel} 
 \usepackage{wrapfig}
-\usepackage[table,xcdraw]{xcolor}
+%\usepackage[table,xcdraw]{xcolor}
 \usepackage{booktabs}
 \usepackage{pifont}
 \usepackage{graphicx}
@@ -115,22 +141,22 @@
 \\
 % commands vi to copy/paste D :+19 ->>> p :-18 :w
 \midrule
-1\,&   Анохин Петр Александрович       \ok\ok\ok\ok\ok\ok&&\\
-2\,&   Врионакис Анна Андреевна        \ok\ok\ok\ok\ok\ok&&\\
-3\,&   Гавришенков Андрей Андреевич    \ok\ok\no\no\no\ok&&\\
-4\,&   Голиков Дмитрий Александрович   \ok\ok\ok\ok\ok\ok&&\\
-5\,&   Дамизов Георгий Игоревич        \ok\no\ok\no\no\no&&\\
+1\,&   Анохин Петр Александрович       \ok\ok\ok\ok\ok\ok\no&\\
+2\,&   Врионакис Анна Андреевна        \ok\ok\ok\ok\ok\ok\ok&\\
+3\,&   Гавришенков Андрей Андреевич    \ok\ok\no\no\no\ok\ok&\\
+4\,&   Голиков Дмитрий Александрович   \ok\ok\ok\ok\ok\ok\ok&\\
+5\,&   Дамизов Георгий Игоревич        \ok\no\ok\no\no\no\ok&\\
 \midrule
-6\,&   Егоров Денис Валерьевич         \ok\no\ok\ok\no\ok&&\\
-7\,&   Кондаурова Анна Евгеньевна      \ok\no\no\ok\no\no&&\\
-8\,&   Кораблев Иван                   \no\no\no\no\no\no&&\\
-9\,&   Кусаинов Асылхан                \ok\ok\ok\ok\ok\ok&&\\ 
-10\,&  Мазуров Глеб Алексеевич         \ok\no\ok\no\ok\ok&&\\
+6\,&   Егоров Денис Валерьевич         \ok\no\ok\ok\no\ok\no&\\
+7\,&   Кондаурова Анна Евгеньевна      \ok\no\no\ok\no\no\no&\\
+8\,&   Кораблев Иван                   \no\no\no\no\no\no\ok&\\
+9\,&   Кусаинов Асылхан                \ok\ok\ok\ok\ok\ok\no&\\ 
+10\,&  Мазуров Глеб Алексеевич         \ok\no\ok\no\ok\ok\no&\\
 \midrule
-11\,&  Машкалев Никита Александрович   \ok\no\ok\no\no\no&&\\
-12\,&  Парфёнов Антон Русланович       \ok\no\ok\ok\no\no&&\\
-13\,&  Слепков Виктор Владимирович     \ok\ok\no\no\no\no&&\\
-14\,&  Сосновская Анастасия Алексеевна \ok\ok\ok\ok\ok\ok&&\\
+11\,&  Машкалев Никита Александрович   \ok\no\ok\no\no\no\no&\\
+12\,&  Парфёнов Антон Русланович       \ok\no\ok\ok\no\no\no&\\
+13\,&  Слепков Виктор Владимирович     \ok\ok\no\no\no\no\no&\\
+14\,&  Сосновская Анастасия Алексеевна \ok\ok\ok\ok\ok\ok\no&\\
 \bottomrule
 \end{tabular} 
 
@@ -142,12 +168,12 @@
 &&Л1&Л1& Л2&Л2& Л3&Л3& Л4&Л4& &Л5&Л5& Л6&Л6\\
 \midrule
 1\,&   Анохин Петр Александрович       &&&&&&&&\\
-2\,&   Врионакис Анна Андреевна        &&&&&&&&\\
+	2\,&   Врионакис Анна Андреевна        &14.03&27.03&22.05&22.05&22.05&22.05&22.05&22.05& 22.05&22.05\\
 3\,&   Гавришенков Андрей Андреевич    &&&&&&&&\\
-4\,&   Голиков Дмитрий Александрович   &&&&&&&&\\
+	4\,&   Голиков Дмитрий Александрович   &26.04&22.05& 4.05 &22.05& 4.05 &22.05&14.05&22.05&14.05&22.05\\
 5\,&   Дамизов Георгий Игоревич        &&&&&&&&\\
 \midrule
-6\,&   Егоров Денис Валерьевич         &&&&&&&&\\
+6\,&   Егоров Денис Валерьевич         &31.03&22.05& --    & 22.05 &&&&\\
 7\,&   Кондаурова Анна Евгеньевна      &&&&&&&&\\
 8\,&   Кораблев Иван                   &&&&&&&&\\
 9\,&   Кусаинов Асылхан                &&&&&&&&\\
@@ -173,5 +199,6 @@
 \begin{itemize}
 \item Егоров -- оба напряжения питания ОУ должны быть 14Вольт
 \item Врионакис -- почему-то при 10m для VG1 и VG2 на выходе напряжение 10В
+\item Голиков -- если на входе системы 5мВ, а на выходе 6мВ, то коэффициент усиления $K_{U\text{синфазное}} = 1.2$, а не $6^10^-3$ 
 \end{itemize}
 \end{document}
